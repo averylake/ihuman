@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I, Human - Finding the Human Signal | Avery Lake</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="'I' - A hand-coded QR code artwork exploring the search for the human signal within algorithmic noise. Mixed media on paper, 16×16 inches.">
+    <meta name="keywords"
+        content="Avery Lake, contemporary art, QR code art, conceptual art, human signal, algorithmic noise">
+    <meta name="author" content="Avery Lake">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="I, Human - Finding the Human Signal | Avery Lake">
+    <meta property="og:description"
+        content="A hand-coded QR code artwork exploring identity in the digital age. Each pixel hand-drawn, asserting human presence within machine logic.">
+    <meta property="og:image" content="https://ihuman.averylakeofficial.com/images/preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ihuman.averylakeofficial.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I, Human - Finding the Human Signal | Avery Lake">
+    <meta name="twitter:description" content="A hand-coded QR code artwork exploring identity in the digital age.">
+    <meta name="twitter:image" content="https://ihuman.averylakeofficial.com/images/preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚪</text></svg>">
+
+    <style>
+        :root {
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-secondary: 'Georgia', 'Times New Roman', serif;
+            --accent-color: #000;
+            --bg-color: #fff;
+            --text-color: #121212;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background: var(--bg-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 40px 0;
+        }
+
+        .subtitle {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            font-family: var(--font-secondary);
+        }
+
+        .title-subtitle {
+            font-size: 20px;
+            color: #666;
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+        }
+
+        .artwork-section {
+            margin: 80px auto;
+            max-width: 900px;
+        }
+
+        .artwork-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            display: block;
+            border: 1px solid #e0e0e0;
+        }
+
+        .artwork-details {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .artwork-details p {
+            margin: 5px 0;
+        }
+
+        .enquire-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 40px;
+            background: #000;
+            color: #fff;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border: 2px solid #000;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .enquire-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        section {
+            margin: 80px auto;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: var(--font-secondary);
+        }
+
+        .artist-photo {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            display: block;
+            border: 1px solid #e0e0e0;
+        }
+
+        .photo-credit {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .quote {
+            font-size: 22px;
+            line-height: 1.7;
+            font-style: italic;
+            color: #333;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 700px;
+            border-left: 3px solid #000;
+            padding-left: 30px;
+        }
+
+        .quote-author {
+            font-size: 14px;
+            font-style: normal;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .body-text {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: rgba(18, 18, 18, 0.85);
+        }
+
+        .technical-specs {
+            background: #f9f9f9;
+            padding: 30px;
+            border-left: 3px solid #000;
+            margin: 40px 0;
+        }
+
+        .technical-specs h3 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .technical-specs p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding: 40px 0;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+        }
+
+        footer a:hover {
+            opacity: 0.6;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            border: none;
+        }
+
+        .social-media {
+            text-align: center;
+            margin: 80px 0;
+            max-width: none;
+        }
+
+        .social-media h2 {
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #e0e0e0;
+            border-radius: 0;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent-color);
+        }
+
+        .social-icon:hover {
+            border-color: var(--accent-color);
+            background: rgba(18, 18, 18, 0.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .title-subtitle {
+                font-size: 18px;
+            }
+
+            .quote {
+                font-size: 18px;
+                padding-left: 20px;
+            }
+
+            .artwork-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="subtitle">Artwork Info</div>
+            <h1>I, Human</h1>
+            <div class="title-subtitle">Finding the Human Signal in the Algorithmic Noise</div>
+            <div class="subtitle">Avery Lake (2026)</div>
+        </header>
+
+        <!-- Artwork Image -->
+        <div class="artwork-section">
+            <img src="images/i-human-gallery-mockup.png" alt="I, Human - QR Code on Glass (Black Mirror Effect)"
+                class="artwork-image">
+
+            <div class="artwork-details">
+                <p><strong>Medium:</strong> uni® POSCA® PC-1M Paint Marker (White) on glass</p>
+                <p><strong>Surface:</strong> Glass with black backing</p>
+                <p><strong>Frame:</strong> 12" × 18" black frame</p>
+                <p><strong>Effect:</strong> Black mirror—viewer's reflection overlaid with QR code</p>
+                <p><strong>Edition:</strong> Unique (1/1)</p>
+                <p><strong>Year:</strong> 2026</p>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="mailto:hello@averylakeofficial.com?subject=Artwork Enquiry: I, Human"
+                    class="enquire-btn">ENQUIRE</a>
+            </div>
+        </div>
+
+        <!-- Concept Statement -->
+        <section>
+            <h2>About the Work</h2>
+
+            <div class="quote">
+                "Even when we are reduced to data, even when faced with the black mirror of our own erasure, the 'I'
+                persists. The flattening of the human condition has failed."
+                <div class="quote-author">— Avery Lake</div>
+            </div>
+
+            <p class="body-text">
+                <strong>I, Human</strong> is a functional QR code, meticulously hand-drawn on glass with white paint
+                marker.
+                Each element—traditionally generated by algorithms—is recreated through human labor, asserting
+                individual presence within machine logic. The black backing behind the glass creates a "black mirror"
+                effect, where viewers see their own reflection overlaid with the QR code.
+            </p>
+
+            <p class="body-text">
+                The word "I" sits at the center of the data pattern, surrounded by hand-drawn sparkles that represent
+                what
+                algorithms cannot measure: hope, consciousness, the irreducible human signal that persists beyond
+                quantification.
+            </p>
+
+            <p class="body-text">
+                This piece embodies a paradox: QR codes are meant to be machine-generated, instantly scannable markers
+                of efficiency. By hand-drawing each pixel on glass, the artist reclaims the digital through analog
+                means—the "I" creating its own identity within the very systems designed to commodify it. The viewer
+                confronts both the data pattern and their own reflection, becoming part of the black mirror.
+            </p>
+
+            <p class="body-text">
+                When scanned, the QR code links to <strong>Protocol 06: The Signal</strong>
+                (<a href="https://i.averylakeofficial.com" target="_blank"
+                    style="color: #000; text-decoration: underline;">i.averylakeofficial.com</a>),
+                an interactive digital experience exploring what remains irreducibly human in the age of artificial
+                intelligence.
+                The physical artwork becomes a portal to its digital counterpart—two expressions of the same question.
+            </p>
+
+            <p class="body-text">
+                <strong>I, Human</strong> asks: At the moment of final reduction, when we thought humans could be
+                reduced to
+                mere data,
+                can we still find the human signal? The flattening has failed. The "I" persists.
+            </p>
+        </section>
+
+        <!-- Technical Specs -->
+        <div class="technical-specs">
+            <h3>Technical Details</h3>
+            <p><strong>Title:</strong> <em>I, Human</em></p>
+            <p><strong>Artist:</strong> Avery Lake</p>
+            <p><strong>Year:</strong> 2026</p>
+            <p><strong>Citation:</strong> Lake, Avery. <em>I, Human</em>. 2026. uni POSCA paint marker on glass,
+                12" × 18".</p>
+            <p style="margin-top: 20px;"><strong>Medium:</strong> uni® POSCA® PC-1M Extra-Fine Bullet Tip Paint Marker
+                (White) on glass</p>
+            <p><strong>Process:</strong> QR code hand-drawn directly on glass surface with black backing behind to
+                create "black mirror" effect</p>
+            <p><strong>Surface:</strong> Glass (framed)</p>
+            <p><strong>Frame:</strong> 12" × 18" black frame with black backing</p>
+            <p><strong>Effect:</strong> Black mirror—viewers see their own reflection with QR code overlaid</p>
+            <p><strong>Functionality:</strong> QR code scans to Protocol 06: The Signal (<a
+                    href="https://i.averylakeofficial.com" target="_blank"
+                    style="color: #000;">i.averylakeofficial.com</a>)</p>
+            <p><strong>Edition:</strong> Unique work (1/1)</p>
+        </div>
+
+        <!-- Context -->
+        <section>
+            <h2>Related Work</h2>
+
+            <p class="body-text">
+                <strong>I, Human</strong> is part of <em>The Digital Audit of the Human Condition</em>, an ongoing
+                multimedia
+                project examining humanity in the Intelligence Age. The project includes:
+            </p>
+
+            <p class="body-text">
+                <strong>THE SIGNAL</strong> (Album, 2026) — A 9-track exploration of what remains irreducibly human when
+                everything becomes data. Each track corresponds to a web-based protocol examining AI, commodification,
+                and consciousness.
+            </p>
+
+            <p class="body-text">
+                <strong>Gem Mint Abundance</strong> (Installation, 2026) — Opening January 9 at The Gallery George,
+                Vancouver.
+                A mixed-media installation examining spiritual commodification through Tarot and trading card culture.
+            </p>
+
+            <p class="body-text">
+                Together, these works explore the same question from different angles: What happens to human value in an
+                age that can measure, optimize, and sell everything?
+            </p>
+        </section>
+
+        <!-- Social Media -->
+        <section class="social-media" style="text-align: center;">
+            <h2>Follow Avery Lake</h2>
+            <div class="social-icons">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/averylakeofficial/" target="_blank" class="social-icon"
+                    title="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/artist/1uIQefi3KYCzjm0DmUvXal" target="_blank" class="social-icon"
+                    title="Spotify">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 14.5c1.5-1 4-1 6 0M8 11c2-1.5 5-1.5 7 0M9 17.5c1-0.5 3-0.5 4.5 0"></path>
+                    </svg>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@AveryLake" target="_blank" class="social-icon" title="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+                    </svg>
+                </a>
+
+                <!-- Apple Music -->
+                <a href="https://music.apple.com/us/artist/avery-lake/1784339918" target="_blank" class="social-icon"
+                    title="Apple Music">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/people/Avery-Lake/61574824514934/" target="_blank" class="social-icon"
+                    title="Facebook">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/company/averylake" target="_blank" class="social-icon"
+                    title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About the Artist -->
+        <section>
+            <h2>About the Artist</h2>
+
+            <img src="https://cdn.shopify.com/s/files/1/0706/6458/5393/files/1000007521.png"
+                alt="Avery Lake - Artist Portrait" class="artist-photo">
+            <p class="photo-credit">Image: Tile #3 from Mirror Making of a Self Portrait, Avery Lake, 2025</p>
+
+            <p class="body-text">
+                Avery Lake is a Swiss-Canadian conceptual artist based in British Columbia's Fraser Valley.
+                Their interdisciplinary practice spans visual art, interactive digital experiences, and music, exploring
+                the tension between human depth and technological reduction.
+            </p>
+
+            <p class="body-text">
+                Lake's work asks: In an age where everything can be quantified, commodified, and optimized, what remains
+                priceless?
+                Through installations, protocols, and sonic meditations, they search for the signal that cannot be
+                flattened—the
+                irreducible human element that persists beyond data.
+            </p>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer>
+            <p><strong>Avery Lake</strong></p>
+            <p>Fraser Valley, British Columbia, Canada</p>
+            <p>Email: <a href="mailto:hello@averylakeofficial.com">hello@averylakeofficial.com</a></p>
+            <p>Website: <a href="https://averylakeofficial.com" target="_blank">averylakeofficial.com</a></p>
+
+            <div class="social-links">
+                <a href="https://instagram.com/averylakeofficial" target="_blank">Instagram</a> •
+                <a href="https://gemmint.averylakeofficial.com" target="_blank">Gem Mint Abundance</a> •
+                <a href="https://averylakeofficial.com/digital" target="_blank">The Digital Audit</a>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 12px; color: #999;">© 2026 Avery Lake. All rights reserved.</p>
+            <p style="margin-top: 20px; font-size: 12px; color: #999;">With gratitude, The Art of Avery Lake
+                acknowledges practicing on Stó:lō Tém:éxw,<br>
+                in the unceded Stó:lō territory of the Máthxwi First Nation and the Semá:th First Nation.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
